@@ -12,3 +12,4 @@ C:\Users\everc\OneDrive\Documentos\progra2\IntroduccionLinq\IntroduccionLinq\obj
 C:\Users\everc\OneDrive\Documentos\progra2\IntroduccionLinq\IntroduccionLinq\obj\Debug\net8.0\IntroduccionLinq.pdb
 C:\Users\everc\OneDrive\Documentos\progra2\IntroduccionLinq\IntroduccionLinq\obj\Debug\net8.0\IntroduccionLinq.genruntimeconfig.cache
 C:\Users\everc\OneDrive\Documentos\progra2\IntroduccionLinq\IntroduccionLinq\obj\Debug\net8.0\ref\IntroduccionLinq.dll
+C:\Users\everc\OneDrive\Documentos\progra2\IntroduccionLinq\IntroduccionLinq\obj\Debug\net8.0\IntroduccionLinq.sourcelink.json
