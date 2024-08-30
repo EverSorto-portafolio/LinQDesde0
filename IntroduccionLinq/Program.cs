@@ -203,11 +203,12 @@ Console.WriteLine(medico.Single().nombre);
 */
 #endregion
 #region OrderBy
-var edadA = ListaHabitantes.OrderBy(x => x.Edad);
+/*var edadA = ListaHabitantes.OrderBy(x => x.Edad);
 var edadAC = from vt in ListaHabitantes orderby vt.Edad select vt;
 foreach (var edad in edadAC) { 
     Console.WriteLine(edad.datosHabitante());
 }
+*/
 #endregion
 #region OrderBYDescending()
 /* var listaEdad = ListaHabitantes.OrderByDescending(x => x.Edad);
@@ -222,4 +223,27 @@ foreach (Habitante h in ListaEdad2)
 }
 */
 #endregion
+#region ThenBy
+//var habitantes3 = ListaHabitantes.OrderBy(x => x.Edad).ThenBy(x => x.Nombre);
 
+
+
+var edadATA = from h in ListaHabitantes orderby h.Edad, h.Nombre descending select h;
+
+foreach (var h in edadATA)
+{
+    Console.WriteLine(h.datosHabitante());
+}
+
+Console.WriteLine("------------------");
+
+//var habitantes4 = ListaHabitantes.OrderBy(x => x.Edad).ThenByDescending(x => x.Nombre);
+
+var lista4 = from h in ListaHabitantes orderby h.Edad, h.Nombre ascending select h; 
+
+foreach (var h in lista4)
+{
+    Console.WriteLine(h.datosHabitante());
+}
+
+#endregion
