@@ -100,7 +100,7 @@ ListaHabitantes.Add(new Habitante
 {
     IdHabitante = 1,
     Nombre = "Nathan Drake",
-    Edad = 36,
+    Edad = 37,
     IdCasa = 1
 });
 #endregion
@@ -193,12 +193,19 @@ catch (Exception) {
 */
 #endregion
 #region typeOf
-var listaEmpleados = new List<Empleado>() { 
+/* var listaEmpleados = new List<Empleado>() { 
     new Medico(){ nombre= "Jorge Casa" },
     new Enfermero(){ nombre = "Raul Blanco"}
 };
 
 var medico = listaEmpleados.OfType<Medico>();
 Console.WriteLine(medico.Single().nombre);
+*/
+#endregion
+#region OrderBY
+var listaEdad = ListaHabitantes.OrderByDescending(x => x.Edad);
+foreach (Habitante h in listaEdad) { 
+    Console.WriteLine(h.datosHabitante());
+}
 
 #endregion
